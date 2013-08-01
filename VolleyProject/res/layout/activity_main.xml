@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" 
+    >
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:focusable="true"  
+	    android:focusableInTouchMode="true"
+	    >
+
+	    <Button 
+	        android:id="@+id/searchBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:text="搜索" 
+	        />
+	
+	    <EditText 
+	        android:id="@+id/tagsText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@id/searchBtn"
+	        android:hint="Tags" 
+	        />
+	    
+	</RelativeLayout>
+	
+	<GridView 
+        android:id="@+id/imagesGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+	    android:numColumns="3"
+	    android:stretchMode="columnWidth"
+	    android:horizontalSpacing="4dp"
+	    android:verticalSpacing="4dp"
+	    android:padding="4dp" 
+	    />
+	
+</LinearLayout>
